@@ -27,7 +27,6 @@ const Sidenav = () => {
         <div className='text-[gray]'>
           <NavLink
             to='/'
-            exact
             className={({ isActive }) => `flex items-center gap-4 font-[500] w-[90%] h-[40px] pl-4 ${isActive ? 'bg-[#EBEBEB] text-black h-[45px] rounded-[5px] w-[90%] font-[700]' : ''}`}
           >
             <img src={home} alt="home-image" />

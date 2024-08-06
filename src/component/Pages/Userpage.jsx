@@ -180,14 +180,14 @@ const Userpage = () => {
             </p>
             <div className="border border-[#AAAAAA] bg-[#EBEBEB] flex  focus:outline-none pl-[16px] mt-2 w-[100%] h-[45px] rounded-[5px]">
               <img src="./image/nigeria-naira-currency-symbol.png" className="w-[10px] h-[30px] pt-4 "/>
-              <input type="text" className="focus:outline-none  w-[100%] h-[50px] ml-2  bg-transparent text-[20px]"/>
+              <input name='currency' type="text" className="focus:outline-none  w-[100%] h-[50px] ml-2  bg-transparent text-[20px]"/>
             </div>
 
             <p className="text-[#AAAAAA] text-[12px] font-[600] pl-1 pt-6">
               Credit Score
             </p>
             <div className="border border-[#AAAAAA] bg-[#EBEBEB]   focus:outline-none pl-[16px] mt-2 w-[100%] h-[45px] rounded-[5px]">
-              <input type="text" className="focus:outline-none  w-[100%] h-[50px] ml-2  bg-transparent text-[20px]"/>
+              <input name='credit score' type="text" className="focus:outline-none  w-[100%] h-[50px] ml-2  bg-transparent text-[20px]"/>
             </div>
 
             <p className="text-[#AAAAAA] text-[12px] font-[600] pl-1 pt-4">
@@ -195,7 +195,7 @@ const Userpage = () => {
             </p>
             <div className="border border-[#AAAAAA] bg-[#EBEBEB] flex  focus:outline-none pl-[16px] mt-2 w-[100%] h-[45px] rounded-[5px]">
               <img src="./image/nigeria-naira-currency-symbol.png" className="w-[10px] h-[30px] pt-4 "/>
-              <input type="text" className="focus:outline-none  w-[100%] h-[50px] ml-2  bg-transparent text-[20px]"/>
+              <input name='text' type="text" className="focus:outline-none  w-[100%] h-[50px] ml-2  bg-transparent text-[20px]"/>
             </div>
 
             {/* button */}
@@ -223,22 +223,34 @@ const Userpage = () => {
 
             <form action="">
               <div className="mt-4 w-[100%] h-[160px] border-2 border-[#EBEBEB] rounded-[8px] ">
-                <textarea cols="29" rows="4" className="hidden 2xl:block pl-[20px]  pt-2 focus:outline-none text-[gray]  border border-transparent ">
-                  Type Your Note
-                </textarea>
+                <textarea id='2xl'
+                  cols="29"
+                  rows="4"
+                  className="hidden 2xl:block pl-[20px] pt-2 focus:outline-none text-[gray] border border-transparent"
+                  defaultValue="Type Your Note"
+                />
 
-                <textarea cols="20" rows="4" className="lg:hidden 2xl:hidden xl:block pl-[20px]  pt-2 focus:outline-none text-[gray]  border border-transparent ">
-                  Type Your Note
-                </textarea>
+                <textarea id='xl'
+                  cols="20"
+                  rows="4"
+                  className="lg:hidden 2xl:hidden xl:block pl-[20px] pt-2 focus:outline-none text-[gray] border border-transparent"
+                  defaultValue="Type Your Note"
+                />
 
-                <textarea cols="18" rows="4" className="2xl:hidden xl:hidden lg:block pl-[9px]  pt-2 focus:outline-none text-[gray]  border border-transparent ">
-                  Type Your Note
-                </textarea>
-               
+                <textarea id='lg'
+                  cols="18"
+                  rows="4"
+                  className="2xl:hidden xl:hidden lg:block pl-[9px] pt-2 focus:outline-none text-[gray] border border-transparent"
+                  defaultValue="Type Your Note"
+                />
+    
                 <hr />
-                <button className="w-[100px] h-[35px] float-right mr-2 bg-[#06476D] mt-1 rounded-[5px] text-white" >Add Note</button>
+                <button className="w-[100px] h-[35px] float-right mr-2 bg-[#06476D] mt-1 rounded-[5px] text-white">
+                  Add Note
+                </button>
               </div>
-            </form>
+             </form>
+
 
             <div className="w-[100%] lg:h-[180px] xl:h-[170px] 2xl:h-[140px] border-2 border-[#EBEBEB] rounded-[8px] mt-8 text-[16px] font-[Avenir] ">
               <div className="flex items-center  h-[60px] pt-4 pl-4">
@@ -261,9 +273,9 @@ const Userpage = () => {
         </div>
       </div>
 
-      <div className= {`${imageCancel ? 'block' : 'hidden'} flex items-center mx-[15%] lg:mt-[-124vw] xl:mt-[-93vw] 2xl:mt-[-73vw]`}>
+      <div className= {`${imageCancel ? 'block' : 'hidden'} flex items-center mx-[15%] lg:mt-[-124vw] xl:mt-[-99vw] 2xl:mt-[-73vw]`}>
         <img className='' src={Image} alt="" />
-        <img onClick={cancleClick} className='lg:mt-[-40vw] xl:mt-[-511px] 2xl:mt-[-511px] lg:ml-[-7.2vw] xl:ml-[-6.8vw] 2xl:ml-[-87.6px] cursor-pointer' src={cancel} alt="" />
+        <img onClick={cancleClick} className='lg:mt-[-40vw] xl:mt-[-511px] 2xl:mt-[-33.3vw] lg:ml-[-7.2vw] xl:ml-[-6.8vw] 2xl:ml-[-87.6px] cursor-pointer' src={cancel} alt="" />
       </div>
     
     </div>

@@ -3,7 +3,7 @@ import Sidebar from './component/Sidenav.jsx';
 import Home from './component/Pages/Home.jsx';
 import Membership from './component/Pages/Membership.jsx';
 import Userpage from './component/Pages/Userpage.jsx';
-import {BrowserRouter,Route, Routes} from 'react-router-dom'
+import {Route, Routes} from 'react-router-dom'
 import Signin from './component/Signin/Signin.jsx';
 
 
@@ -22,16 +22,14 @@ function App() {
 
   return (
     <div>
-      <BrowserRouter>
-        <Sidebar/>
+      <Sidebar/>
         
-        <Routes>
+      <Routes>
           <Route path='/' element={<Home/>} />
           <Route path='/membership' element={<Membership/>} />
           <Route path='/userpage' element={<Userpage/>} />
         </Routes>
-        {/* <Signin/> */}
-      </BrowserRouter>
+      {/* <Signin/> */}
     </div>
   )
 }

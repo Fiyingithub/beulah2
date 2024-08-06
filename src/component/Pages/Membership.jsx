@@ -17,7 +17,7 @@ const Membership = () => {
             <div className="flex items-center ml-4  w-[175px] h-[37px] border border-none bg-[#EBEBEB] border-black rounded-[5px] pl-2">
               <img className='size-4' src={search} alt="search-image" />
 
-              <input
+              <input name="search"
                 type="search"
                 placeholder="Search by name"
                 className="   bg-transparent w-[140px] ml-2 border border-none  focus:outline-none "
@@ -26,6 +26,7 @@ const Membership = () => {
             <img className='cursor-pointer size-6 mr-6' src={filter} alt="filter" />
           </div>
           <table className="mt-6 mx-4 border-collapse text-[12px] font-[600] text-[#303030] ">
+            <thead>
             <tr>
               <th className="text-[grey] py-4 border border-r-0 border-l-0 xl:px-8 2xl:px-8 ">Date</th>
               <th className="text-[grey] py-4 border border-r-0 border-l-0 lg:pl-6 xl:pl-10 2xl:pl-10 "> Application ID</th>
@@ -34,6 +35,8 @@ const Membership = () => {
                 Status
               </th>
             </tr>
+            </thead>
+            <tbody>
             <tr className='hover:bg-green-50 cursor-pointer'>
               <td className="py-4 border border-r-0 border-l-0 pl-4">10Secs Ago</td>
               <td className="py-4 text-center pl-8 border border-r-0 border-l-0  ">#abc123</td>
@@ -125,6 +128,7 @@ const Membership = () => {
                 </div>
               </td>
             </tr>
+            </tbody>
           </table>
         </div>
       </div>

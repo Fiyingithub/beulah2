@@ -18,7 +18,7 @@ const Home = () => {
             </div>
             
             <div>
-              <select className='2xl:w-[120px] px-2 h-[30px] border-2'>
+              <select id='select' className='2xl:w-[120px] px-2 h-[30px] border-2'>
                 <option>Last week</option>
               </select>
             </div>
